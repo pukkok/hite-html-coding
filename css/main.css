@@ -1,0 +1,1430 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+*{
+    box-sizing: border-box;
+}
+/* 전체 */
+
+body{
+    color:#222;
+    font-size:14px;
+    line-height:1.5em;
+    font-family: 'Nanum Gothic', sans-serif;
+    /* margin-right: 100px; */
+}
+
+.blind{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+.clearFix::after{
+    content:''; 
+    display:block; 
+    clear:both;
+}
+
+li{
+    display: inline;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: solid 1px white;
+    padding-bottom: 3%;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header .logo{
+    position: absolute;
+    width: 120px;
+    left: 15%;
+    top: 50%;
+    transform:  translate(-50%, -50%);
+}
+
+.header .bar{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin: auto;
+    transform:  translate(-50%, -50%);
+}
+.header .bar li{
+    color: white;
+    font-size: 16px;
+    margin-right: 80px;
+    font-weight: 500;
+}
+.header .bar li:last-child{
+    margin-right: 0;
+}
+.header .login{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    margin: auto;
+    transform:  translate(-50%, -50%);
+}
+.header .login li{
+    color: white;
+    font-size: 12px;
+    margin-right: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.header .bmenu{
+    position: absolute;
+    top: 20px;
+    font-size: 17px;
+    right: 30px;
+    font-weight: bold;
+}
+
+.header .icon{
+    position: absolute;
+    width: 30px;
+    right: 30px;
+    top: 30px;
+}
+.bbox{
+    position: relative;
+    width: 210px;
+    transition-duration: 2s;
+}
+.brand{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 105px;
+    height: 100%;
+    z-index: 999;
+    background: #333;
+    display: block;
+}
+.brand .b_top{
+    position: relative;
+    top: 7px;
+    display: block;
+    width: 110px;
+    height: 50px;
+    background: url(../img/logo/gnb_brand_menu_1.png) no-repeat;
+    background-position: 0px -5px;
+    padding-bottom: 20px;
+}
+/* color1 */
+.brand .b1{
+    position: relative;
+    top: 0px;
+    display: block;
+    width: 110px;
+    height: 100px;
+    background: url(../img/logo/gnb_brand_menu_2.png) no-repeat;
+    background-position: 0px 0px;
+}
+.subbox .b1_sub a,
+.subbox .b2_sub a,
+.subbox .b3_sub a,
+.subbox .b4_sub a,
+.subbox .b5_sub a,
+.subbox .b6_sub a{
+    position: relative;
+    top: 50px;
+    display: block;
+    width: 110px;
+    height: 100px;
+}
+
+.b1_sub .sub1{
+    background: url(../img/logo/extracold.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b1_sub .sub2{
+    background: url(../img/logo/max.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b1_sub .sub3{
+    background: url(../img/logo/d.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b1_sub .sub4{
+    background: url(../img/logo/s.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b1_sub .sub5{
+    background: url(../img/logo/stout.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b1_sub .sub6{
+    background: url(../img/logo/ale.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b1_sub a:hover{
+    background-position: -100px 0px;
+}
+
+.b1_sub{
+    position: fixed;
+    background: #213e92;
+    top: 0;
+    right: 0px;
+    width: 105px;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+/* color2 */
+.brand .b2{
+    position: relative;
+    top: 0px;
+    display: block;
+    width: 110px;
+    height: 100px;
+    background: url(../img/logo/gnb_brand_menu_2.png) no-repeat;
+    background-position: 0px -100px;
+}
+
+.b2_sub .sub1{
+    background: url(../img/logo/s_fresh.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b2_sub .sub2{
+    background: url(../img/logo/s_origin.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b2_sub .sub3{
+    background: url(../img/logo/s_17.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b2_sub .sub4{
+    background: url(../img/logo/s_chamtree.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b2_sub .sub5{
+    background: url(../img/logo/s_fresh.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b2_sub .sub6{
+    background: url(../img/logo/s_fresh.png) no-repeat;
+    background-position: 0px 0px;
+}
+
+.b2_sub a:hover{
+    background-position: -100px 0px;
+}
+.b2_sub{
+    position: fixed;
+    background: #99cc41;
+    top: 0;
+    right: 0px;
+    width: 105px;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+
+/* color3 */
+.brand .b3{
+    position: relative;
+    top: 0px;
+    display: block;
+    width: 110px;
+    height: 100px;
+    background: url(../img/logo/gnb_brand_menu_2.png) no-repeat;
+    background-position: 0px -200px;
+}
+.b3_sub .sub1{
+    background: url(../img/logo/class.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b3_sub .sub2{
+    background: url(../img/logo/kingdom.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b3_sub a:hover{
+    background-position: -100px 0px;
+}
+.b3_sub{
+    position: fixed;
+    background: #f68a0a;
+    top: 0;
+    right: 0px;
+    width: 105px;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+
+/* color4 */
+.brand .b4{
+    position: relative;
+    top: 0px;
+    display: block;
+    width: 110px;
+    height: 100px;
+    background: url(../img/logo/gnb_brand_menu_2.png) no-repeat;
+    background-position: 0px -300px;
+}
+.b4_sub .sub1{
+    background: url(../img/logo/france.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b4_sub .sub2{
+    background: url(../img/logo/italy.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b4_sub .sub3{
+    background: url(../img/logo/spain.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b4_sub .sub4{
+    background: url(../img/logo/germany.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b4_sub .sub5{
+    background: url(../img/logo/austria.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b4_sub .sub6{
+    background: url(../img/logo/chille.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b4_sub .sub7{
+    background: url(../img/logo/usa.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b4_sub a:hover{
+    background-position: -100px 0px;
+}
+.b4_sub{
+    position: fixed;
+    background: #7436b5;
+    top: 0;
+    right: 0px;
+    width: 105px;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+/* color5 */
+.brand .b5{
+    position: relative;
+    top: 0px;
+    display: block;
+    width: 110px;
+    height: 100px;
+    background: url(../img/logo/gnb_brand_menu_2.png) no-repeat;
+    background-position: 0px -400px;
+}
+.b5_sub .sub1{
+    background: url(../img/logo/filite.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b5_sub .sub2{
+    background: url(../img/logo/toktok.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b5_sub .sub3{
+    background: url(../img/logo/mango.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b5_sub .sub4{
+    background: url(../img/logo/jamong.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b5_sub .sub5{
+    background: url(../img/logo/grape.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b5_sub .sub6{
+    background: url(../img/logo/bokbunja.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b5_sub .sub7{
+    background: url(../img/logo/maehwasu.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b5_sub a:hover{
+    background-position: -100px 0px;
+}
+.b5_sub{
+    position: fixed;
+    background: #ff617f;
+    top: 0;
+    right: 0px;
+    width: 105px;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+/* color6 */
+.brand .b6{
+    position: relative;
+    top: 0px;
+    display: block;
+    width: 110px;
+    height: 100px;
+    background: url(../img/logo/gnb_brand_menu_2.png) no-repeat;
+    background-position: 0px -500px;
+}
+.b6_sub .sub1{
+    background: url(../img/logo/kirin.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b6_sub .sub2{
+    background: url(../img/logo/blanc.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b6_sub .sub3{
+    background: url(../img/logo/somersby.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b6_sub .sub4{
+    background: url(../img/logo/sincha.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b6_sub .sub5{
+    background: url(../img/logo/xxxxgold.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b6_sub .sub6{
+    background: url(../img/logo/extradry.png) no-repeat;
+    background-position: 0px 0px;
+}
+.b6_sub a:hover{
+    background-position: -100px 0px;
+}
+.b6_sub{
+    position: fixed;
+    background: #727272;
+    top: 0;
+    right: 0px;
+    width: 105px;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+.on{
+    display: block;
+}
+.off{
+    display: none;
+}
+
+.bbox:hover .brand{
+    right: 105px;
+    transition-duration: 0.4s;
+}
+.subbox{
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 105px;
+    height: 100%;
+    z-index: 9;
+    display: block;
+    background: #333;
+}
+.bbox:hover .color1:hover,
+.bbox:hover .color1.active{
+    background: #213e92;
+}
+.bbox:hover .color2:hover,
+.bbox:hover .color2.active{
+    background: #99cc41;
+}
+.bbox:hover .color3:hover,
+.bbox:hover .color3.active{
+    background: #f68a0a;
+}
+.bbox:hover .color4:hover,
+.bbox:hover .color4.active{
+    background: #7436b5;
+}
+.bbox:hover .color5:hover,
+.bbox:hover .color5.active{
+    background: #ff617f;
+}
+.bbox:hover .color6:hover,
+.bbox:hover .color6.active{
+    background: #727272;
+}
+.section1, .section2, .section3, .section4, .section5{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.fin, .bg .active{
+    animation: fadeIn 1s linear;
+    animation-fill-mode: forwards;
+}
+.fout{
+    animation: fadeOut 1s linear;
+    animation-fill-mode: forwards;
+}
+
+.section1 .bg img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.section1 .bg2 img:nth-child(1){
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 45%;
+    height: 18%;
+    z-index: 1;
+}
+.section1 .bg2 img:nth-child(2){
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 20%;
+    height: 16%;
+    z-index: 1;
+}
+.section1 .company1,
+.section1 .company2{
+    position: absolute;
+    width: 18%;
+    height: 14%;
+    padding: 1%;
+    border: solid 2px white;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.section1 .company1{
+    top: 65%;
+    left: 10%;
+}
+.section1 .company2{
+    top: 65%;
+    left: 30%;
+}
+.section1 .company1 h1,
+.section1 .company2 h1{
+    padding-bottom: 5%;
+    font-size: 18px;
+}
+.section1 .company2 .c2{
+    width: 100%;
+}
+.section1 .company1 p,
+.section1 .company2 p{
+    width: 50%;
+    float: left;
+    font-size: 12px;
+    padding-bottom: 2%;
+}
+.section1 .company1 h2,
+.section1 .company2 h2{
+    font-size: 23px;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+/* sec2 */
+.fix{
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.section2{
+    background: white;
+    opacity: 1;
+    transition-duration: 2s;
+}
+.section2 img{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+}
+.section2 .cf{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 2;
+}
+.section2 .cf .anibox{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 185px;
+    height: 185px;
+    z-index: 9;
+}
+.anibox p{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+    height: 100%;
+    font-size: 75px;
+    padding: 10%;
+}
+.anibox .line1-bottom{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border: solid 5px white;
+    opacity: 0;
+    animation-delay: 0.3s;
+    
+}
+.anibox .line1-left{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    border: solid 5px white;
+    opacity: 0;
+    animation-delay: 0.6s;
+}
+.anibox .line1-top{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border: solid 5px white;
+    opacity: 0;
+    animation-delay: 0.9s;
+}
+.anibox .line1-right{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    border: solid 5px white;
+    opacity: 0;
+    animation-delay: 1.2s;
+}
+
+.changew{
+    animation: changew 0.4s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 100% 100%;
+}
+.changew2{
+    animation: changew 0.4s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 0% 0%;
+}
+.changeh{
+    animation: changeh 0.4s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 100% 100%;
+}
+.changeh2{
+    animation: changeh 0.4s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 0% 0%;
+}
+
+.section2 .cf h3{
+    position: absolute;
+    left: 15%;
+    top: 38%;
+    font-size: 50px;
+    line-height: 1.3em;
+    font-weight: 600;
+}
+.section2 .cf .exp{
+    position: absolute;
+    left: 15%;
+    top: 58%;
+    font-size: 15px;
+    line-height: 1.3em;
+}
+.section2 .ani2exp{
+    position: absolute;
+    left: 15%;
+    top: 68%;
+    font-size: 16px;
+}
+
+.section2 .anibox2{
+    position: absolute;
+    left: 16%;
+    top: 65%;
+    width: 60px;
+    height: 60px;
+}
+
+.anibox2 .line-bottom{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    bottom: 0;
+    border: solid 3px rgba(255, 255, 255, 0.8);
+    animation-delay: 2.1s;
+}
+.anibox2 .line-left{
+    position: absolute;
+    opacity: 0;
+    height: 90%;
+    left: 0;
+    border: solid 3px rgba(255, 255, 255, 0.8);
+    animation-delay: 2.4s;
+}
+.anibox2 .line-top{
+    position: absolute;
+    opacity: 0;
+    width: 90%;
+    top: 0;
+    left: 10%;
+    border: solid 3px rgba(255, 255, 255, 0.8);
+    animation-delay: 1.5s;
+}
+.anibox2 .line-right{
+    position: absolute;
+    opacity: 0;
+    height: 80%;
+    top: 10%;
+    right: 0;
+    border: solid 3px rgba(255, 255, 255, 0.8);
+    animation-delay: 1.8s;
+}
+
+.sec_cov{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.sec_cov .cover{
+    position: absolute;
+    right: 15%;
+    width: 50%;
+    height: 100%;
+    transition-duration: 1s;
+    line-height: 1.8em;
+}
+
+.cover .lm{
+    position: absolute;
+    color: white;
+    z-index: 3;
+}
+
+.cover .cf1 img{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 15%;
+    height: 27%;
+    transition-duration: 2s;
+}
+.cover .cf1 p{
+    position: absolute;
+    top: 45%;
+    left: 27%;
+    color: white;
+    font-size: 16px;
+}
+.cover .cf1 .lm{
+    top: 55%;
+    left: 27%;
+}
+.cover .cf2 img{
+    position: absolute;
+    top: 65%;
+    left: 18%;
+    width: 27%;
+    height: 15%;
+    transition-duration: 1s;
+}
+.cover .cf2 p{
+    position: absolute;
+    top: 70%;
+    left: 47%;
+    color: white;
+    font-size: 16px;
+}
+.cover .cf2 .lm{
+    top: 78%;
+    left: 47%;
+}
+.cover .cf3 img{
+    position: absolute;
+    top: 16%;
+    left: 45%;
+    width: 15%;
+    height: 15%;
+}
+.cover .cf3 p{
+    position: absolute;
+    top: 19%;
+    left: 62%;
+    color: white;
+    font-size: 16px;
+}
+.cover .cf3 .lm{
+    top: 29%;
+    left: 62%;
+}
+.cover .cf4 img{
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    width: 15%;
+    height: 15%;
+}
+.cover .cf4 p{
+    position: absolute;
+    top: 43%;
+    left: 82%;
+    color: white;
+    font-size: 16px;
+}
+.cover .cf4 .lm{
+    top: 53%;
+    left: 82%;
+}
+
+
+/* section3 */
+.section3{
+    background: white;
+    z-index: 3;
+    transition-duration: 1s;
+}
+
+.section3 .vbox1,
+.section3 .vbox2,
+.section3 .vbox3,
+.section3 .vbox4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 75%;
+    margin: 6% 10% 0% 10%;
+    transition-duration: 0.5s;
+}
+
+.section3 .vbox1 iframe,
+.section3 .vbox2 iframe,
+.section3 .vbox3 iframe,
+.section3 .vbox4 iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.section3 .change a{
+    position: absolute;
+    width: 15%;
+    height: 18%;
+}
+
+.section3 .change a img{
+    width: 80%;
+    height: 90%;
+}
+.section3 .change .starter{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 80%;
+    height: 90%;
+    top: 0;
+}
+.section3 .change a p{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+    color: white;
+    display: block;
+}
+.section3 .change a:nth-child(1){
+    left: 11%;
+    bottom: -4%;
+    z-index: 5;
+}
+.section3 .change a:nth-child(2){
+    left: 31%;
+    bottom: -4%;
+}
+.section3 .change a:nth-child(3){
+    left: 51%;
+    bottom: -4%;
+}
+.section3 .change a:nth-child(4){
+    left: 71%;
+    bottom: -4%;
+}
+.section3 .change a:hover{
+    bottom: 0%;
+}
+/* rgb(76, 136, 154) */
+/* section4 */
+.section4{
+    background: white;
+    z-index: 2;
+}
+.section4 .news{
+    position: absolute;
+    left: 0;
+    top: 25%;
+    margin: 0 10%;
+    background: #555;
+    width: 80%;
+    height: 500px;
+    color: white;
+}
+.section4 .news .anibox3{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 250px;
+    height: 250px;
+    z-index: 9;
+}
+.section4 .anibox3 h1{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 50px;
+    line-height: 1.3em;
+    font-weight: 600;
+}
+.section4 .anibox3 p{
+    position: absolute;
+    left: 10%;
+    top: 80%;
+    font-size: 15px;
+}
+.anibox3 .line-bottom{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    bottom: 0;
+    border: solid 5px white;
+    animation-delay: 1.2s;
+}
+.anibox3 .line-left{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    left: 0;
+    border: solid 5px white;
+    animation-delay: 1.5s;
+}
+.anibox3 .line-top{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    top: 0;
+    border: solid 5px white;
+    animation-delay: 0.6s;
+}
+.anibox3 .line-right{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    right: 0;
+    border: solid 5px white;
+    animation-delay: 0.9s;
+}
+.section4 .news img{
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+}
+.section4 .nbox1{
+    position: absolute;
+    left: 37%;
+    top: 35%;
+    width: 210px;
+    height: 280px;
+    background: url(../img/news/broad.jpg) no-repeat 60% center;
+    background-size: cover;
+    transition-duration: 1s;
+}
+.section4 .nbox1 p{
+    display: block;
+    width: 200px;
+    height: 280px;
+    font-size: 16px;
+    line-height: 1.5em;
+    background: rgba(0, 0, 0, 0.6);
+    /* opacity: 0.8; */
+    color: white;
+    padding-top: 50%;
+    text-align: center;
+}
+.section4 .nbox1:hover p,
+.section4 .nbox2:hover p,
+.section4 .nbox3:hover p{
+    background: rgba(0, 0, 0, 0.1);
+}
+.section4 .nbox1 .lm,
+.section4 .nbox2 .lm,
+.section4 .nbox3 .lm{
+    position: absolute;
+    left: 25%;
+    top: 110%;
+    color: white;
+}
+.section4 .nbox2{
+    position: absolute;
+    left: 55%;
+    top: 35%;
+    width: 210px;
+    height: 280px;
+    background: url(../img/news/social.jpg) no-repeat 60% center; 
+    background-size: cover;
+    transition-duration: 1s;
+}
+.section4 .nbox2 p{
+    display: block;
+    width: 200px;
+    height: 280px;
+    font-size: 15px;
+    line-height: 1.7em;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding-top: 50%;
+    text-align: center;
+}
+.section4 .nbox3{
+    position: absolute;
+    left: 73%;
+    top: 35%;
+    width: 210px;
+    height: 280px;
+    background: url(../img/news/factory.jpg) no-repeat 60% center;
+    background-size: cover;
+    transition-duration: 1s;
+}
+.section4 .nbox3 p{
+    display: block;
+    width: 200px;
+    height: 280px;
+    font-size: 15px;
+    line-height: 1.5em;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding-top: 50%;
+    text-align: center;
+}
+/* sec5 */
+.section5{
+    background: white;
+}
+.section5 .bgbox{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.section5 img{
+    position: absolute;
+}
+.section5 img:nth-child(1){
+    top: 2%;
+    left: 78%;
+}
+.section5 img:nth-child(2){
+    top: 5%;
+    left: 5%;
+}
+.section5 img:nth-child(3){
+    top: -5%;
+    left: 15%;
+}
+.section5 img:nth-child(4){
+    top: 10%;
+    left: 70%;
+}
+.section5 img:nth-child(5){
+    top: 70%;
+    left: 5%;
+}
+.section5 img:nth-child(6){
+    top: 80%;
+    left: 15%;
+}
+.section5 .sns{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.section5 .sns .anibox{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 300px;
+    height: 300px;
+    z-index: 9;
+}
+.anibox h1{
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    padding: 10%;
+    transition-duration: 1s;
+}
+.anibox h2{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    padding: 10%;
+    line-height: 1.3em;
+    transition-duration: 1s;
+}
+.anibox .line-bottom{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    bottom: 0;
+    border: solid 5px #a4b7b1;
+    animation-delay: 1.2s;
+}
+.anibox .line-left{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    left: 0;
+    border: solid 5px #a4b7b1;
+    animation-delay: 1.5s;
+}
+.anibox .line-top{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    top: 0;
+    border: solid 5px #a4b7b1;
+    animation-delay: 0.6s;
+}
+.anibox .line-right{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    right: 0;
+    border: solid 5px #a4b7b1;
+    animation-delay: 0.9s;
+}
+
+.section5 .sbox{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+.section5 .sbox .ex1{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 12%;
+    height: 20%;
+}
+.section5 .sbox .ex2{
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    width: 12%;
+    height: 20%;
+}
+.section5 .sbox .ex3{
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    width: 12%;
+    height: 20%;
+}
+
+.section5 .sbox a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.section5 .sbox .exp1,
+.section5 .sbox .exp2{
+    overflow: hidden;
+    position: absolute;
+    height: 50%;
+    padding-left: 2%;
+}
+.section5 .sbox .exp3,
+.section5 .sbox .exp4,
+.section5 .sbox .exp5{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.section5 .sbox .snsbox1{
+    background: url(../img/sns/fb1.png) no-repeat center center;
+    background-size: cover;
+    top: 50%;
+    left: 54%;
+    width: 18%;
+    height: 31%;
+}
+.section5 .sbox .exp1{
+    top: 50%;
+    left: 71%;
+}
+.section5 .sbox .snsbox2{
+    background: url(../img/sns/fb4.jpg) no-repeat center center;
+    background-size: cover;
+    top: 50%;
+    left: 20%;
+    width: 18%;
+    height: 31%;
+}
+.section5 .sbox .exp2{
+    top: 50%;
+    left: 37%;
+}
+.section5 .sbox .snsbox3{
+    background: url(../img/sns/insta2.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+.section5 .sbox .snsbox4{
+    background: url(../img/sns/insta4.jpg) no-repeat center center;
+    background-size: cover;
+}
+.section5 .sbox .snsbox5{
+    background: url(../img/sns/blog1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.section5 .sbox p{
+    position: relative;
+    top: 2%;
+    left: 2%;
+    font-size: 13px;
+    text-align: left;
+    color: #222;
+}
+.section5 .sbox .exp3,
+.section5 .sbox .exp4,
+.section5 .sbox .exp5{
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.section5 .sbox .exp3 p,
+.section5 .sbox .exp4 p,
+.section5 .sbox .exp5 p{
+    color: white;
+    top: 5%;
+    left: 5%;
+}
+
+.section5 .sbox .ex1:hover .exp3,
+.section5 .sbox .ex2:hover .exp4,
+.section5 .sbox .ex3:hover .exp5{
+    display: block;
+    
+}
+
+/* footer */
+.footer{
+    padding-top: 1%;
+    padding-bottom: 2%;
+    width: 100%;
+    background: #444;
+    color: #888;
+    text-align: center;
+    z-index: 6;
+    font-size: 12px;
+}
+.footer .line{
+    width: 100%;
+    border-top: solid 1px #333;
+    border-bottom: solid 1px #333;
+    padding: 10px 0;
+}
+.footer .lt{
+    width: 100%;
+}
+
+.footer .lt li+li::before{
+    content: "|";
+    padding: 1%;
+    color: #777;
+}
+.footer .lt .rt{
+    color: white;
+}
+
+.footer .explain{
+    color: #777;
+    padding-top: 1%;
+    line-height: 1.5em;
+}
+
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+              transform: translate3d(-100%, 0, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+              transform: none;
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+              transform: translate3d(100%, 0, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+              transform: none;
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+              transform: translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+              transform: none;
+    }
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+              transform: translate3d(0, -100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+              transform: none;
+    }
+  }
+
+  @keyframes changew{
+      0% {
+          opacity: 0;
+          transform: scaleX(0);
+         
+      }
+      100%{
+          opacity: 1;
+          transform: scaleX(1);
+      }
+  }
+  @keyframes changeh{
+      0% {
+        opacity: 0;
+        transform: scaleY(0);
+          /* transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0); */
+      }
+      100%{
+        opacity: 1;
+        transform: scaleY(1);
+      }
+  }
+  @keyframes changeh2{
+      0% {
+          opacity: 0;
+          height: 0%;
+          /* transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0); */
+      }
+      100%{
+          opacity: 1;
+          height: 50%;
+      }
+  }
+
+  @keyframes fadeIn {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+
+  @keyframes fadeOut {
+      0% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
+
+  /* @media screen and (min-width: 1445px) {
+    .cover .cf1 img{
+        width: 180px;
+        height: 363px;
+        left: 42%;
+    }
+    .cover .cf2 img{
+        width: 363px;
+        height: 180px;
+        left: 45%;
+    }
+    .cover .cf3 img{
+        width: 180px;
+        height: 180px;
+        left: 56%
+    }
+    .cover .cf4 img{
+        width: 180px;
+        height: 180px;
+        left: 67%;
+    }
+  } */
