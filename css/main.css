@@ -720,8 +720,8 @@ a{
 
 .sec_cov .cover{
     position: absolute;
-    right: 15%;
-    width: 50%;
+    right: 10%;
+    width: 1050px;
     height: 100%;
     transition-duration: 1s;
     line-height: 1.8em;
@@ -735,29 +735,29 @@ a{
 
 .cover .cf1 img{
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 3%;
-    width: 200px;
-    height: 430px;
+    width: 240px;
+    height: 480px;
     transition-duration: 2s;
 }
 .cover .cf1 p{
     position: absolute;
     top: 45%;
-    left: 27%;
+    left: 29%;
     color: white;
     font-size: 16px;
 }
 .cover .cf1 .lm{
     top: 55%;
-    left: 27%;
+    left: 29%;
 }
 .cover .cf2 img{
     position: absolute;
     top: 65%;
     left: 3%;
-    width: 450px;
-    height: 200px;
+    width: 520px;
+    height: 260px;
     transition-duration: 1s;
 }
 .cover .cf2 p{
@@ -773,39 +773,39 @@ a{
 }
 .cover .cf3 img{
     position: absolute;
-    top: 16%;
-    left: 32%;
-    width: 200px;
-    height: 200px;
+    top: 10%;
+    left: 35%;
+    width: 230px;
+    height: 230px;
 }
 .cover .cf3 p{
     position: absolute;
     top: 19%;
-    left: 58%;
+    left: 60%;
     color: white;
     font-size: 16px;
 }
 .cover .cf3 .lm{
     top: 29%;
-    left: 58%;
+    left: 60%;
 }
 .cover .cf4 img{
     position: absolute;
-    top: 40%;
-    left: 58%;
-    width: 200px;
-    height: 200px;
+    top: 38%;
+    left: 55%;
+    width: 220px;
+    height: 220px;
 }
 .cover .cf4 p{
     position: absolute;
     top: 43%;
-    left: 82%;
+    left: 79%;
     color: white;
     font-size: 16px;
 }
 .cover .cf4 .lm{
     top: 53%;
-    left: 82%;
+    left: 79%;
 }
 
 
