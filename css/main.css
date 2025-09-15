@@ -735,10 +735,10 @@ a{
 
 .cover .cf1 img{
     position: absolute;
-    top: 30%;
-    left: 10%;
-    width: 15%;
-    height: 27%;
+    top: 15%;
+    left: 3%;
+    width: 200px;
+    height: 430px;
     transition-duration: 2s;
 }
 .cover .cf1 p{
@@ -755,46 +755,46 @@ a{
 .cover .cf2 img{
     position: absolute;
     top: 65%;
-    left: 18%;
-    width: 27%;
-    height: 15%;
+    left: 3%;
+    width: 450px;
+    height: 200px;
     transition-duration: 1s;
 }
 .cover .cf2 p{
     position: absolute;
     top: 70%;
-    left: 47%;
+    left: 55%;
     color: white;
     font-size: 16px;
 }
 .cover .cf2 .lm{
     top: 78%;
-    left: 47%;
+    left: 55%;
 }
 .cover .cf3 img{
     position: absolute;
     top: 16%;
-    left: 45%;
-    width: 15%;
-    height: 15%;
+    left: 32%;
+    width: 200px;
+    height: 200px;
 }
 .cover .cf3 p{
     position: absolute;
     top: 19%;
-    left: 62%;
+    left: 58%;
     color: white;
     font-size: 16px;
 }
 .cover .cf3 .lm{
     top: 29%;
-    left: 62%;
+    left: 58%;
 }
 .cover .cf4 img{
     position: absolute;
     top: 40%;
-    left: 65%;
-    width: 15%;
-    height: 15%;
+    left: 58%;
+    width: 200px;
+    height: 200px;
 }
 .cover .cf4 p{
     position: absolute;
@@ -960,17 +960,17 @@ a{
 }
 .section4 .nbox1{
     position: absolute;
-    left: 37%;
+    left: 35%;
     top: 35%;
-    width: 210px;
+    width: 240px;
     height: 280px;
-    background: url(../img/news/broad.jpg) no-repeat 60% center;
+    background: url(../img/news/broad.jpg) no-repeat 92% center;
     background-size: cover;
     transition-duration: 1s;
 }
 .section4 .nbox1 p{
     display: block;
-    width: 200px;
+    width: 240px;
     height: 280px;
     font-size: 16px;
     line-height: 1.5em;
@@ -989,7 +989,7 @@ a{
 .section4 .nbox2 .lm,
 .section4 .nbox3 .lm{
     position: absolute;
-    left: 25%;
+    left: 30%;
     top: 110%;
     color: white;
 }
@@ -997,15 +997,15 @@ a{
     position: absolute;
     left: 55%;
     top: 35%;
-    width: 210px;
+    width: 230px;
     height: 280px;
-    background: url(../img/news/social.jpg) no-repeat 60% center; 
+    background: url(../img/news/social.jpg) no-repeat -50px center; 
     background-size: cover;
     transition-duration: 1s;
 }
 .section4 .nbox2 p{
     display: block;
-    width: 200px;
+    width: 230px;
     height: 280px;
     font-size: 15px;
     line-height: 1.7em;
@@ -1016,11 +1016,11 @@ a{
 }
 .section4 .nbox3{
     position: absolute;
-    left: 73%;
+    left: 75%;
     top: 35%;
-    width: 210px;
+    width: 235px;
     height: 280px;
-    background: url(../img/news/factory.jpg) no-repeat 60% center;
+    background: url(../img/news/factory.jpg) no-repeat -45px center;
     background-size: cover;
     transition-duration: 1s;
 }
@@ -1152,24 +1152,24 @@ a{
 }
 .section5 .sbox .ex1{
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 40%;
-    width: 12%;
-    height: 20%;
+    width: 250px;
+    height: 250px;
 }
 .section5 .sbox .ex2{
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 55%;
-    width: 12%;
-    height: 20%;
+    width: 250px;
+    height: 250px;
 }
 .section5 .sbox .ex3{
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 70%;
-    width: 12%;
-    height: 20%;
+    width: 250px;
+    height: 250px;
 }
 
 .section5 .sbox a{

@@ -554,7 +554,7 @@ body{
     position: absolute;
     top: 25%;
     margin-left: 13%;
-    width: 69%;
+    width: 80%;
     height: 400px;
 }
 
@@ -574,8 +574,8 @@ body{
 .history .hbox img{
     position: relative;
     top: 5%;
-    width: 50%;
-    height: 70%;
+    width: 80%;
+    height: auto;
 }
 .history .hbox p{
     position: relative;
